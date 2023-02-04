@@ -14,4 +14,4 @@ tools = [
 
 def mow_lawn():
   tool = tools[game["tool"]]
-  print(f"")
+  print(f"You can mow a lawn with your {tool['name']} and make {tool['profit']}")
