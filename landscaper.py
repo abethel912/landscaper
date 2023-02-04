@@ -15,3 +15,8 @@ tools = [
 def mow_lawn():
   tool = tools[game["tool"]]
   print(f"You can mow a lawn with your {tool['name']} and make {tool['profit']}")
+  game['money'] += tool['profit']
+  
+  def check_stats():
+    tool = tools[game["tool"]]
+    print(f"You currently have {game['money']} and are using a {tool['name']}")
