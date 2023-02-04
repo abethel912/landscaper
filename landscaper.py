@@ -31,3 +31,10 @@ def mow_lawn():
         return 0
       game['money'] -= next_tool['cost']
       game['tool'] += 1
+      
+      def win_check():
+        if(game['tool'] == 1 and game['money'] == 1000):
+          print("You win")
+          return True
+          return False
+      
